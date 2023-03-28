@@ -1,18 +1,16 @@
 import DateFormatter from './date-formatter';
 import CoverImage from './cover-image';
 import Link from 'next/link';
-import type Author from '../interfaces/author';
 
 type Props = {
   title: string;
   coverImage: string;
   date: string;
   excerpt: string;
-  author: Author;
   slug: string;
 };
 
-const PostPreview = ({ title, coverImage, date, excerpt, author, slug }: Props) => {
+const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
   return (
     <div className='bg-blue-500'>
       <div className='mb-5'>
@@ -23,10 +21,10 @@ const PostPreview = ({ title, coverImage, date, excerpt, author, slug }: Props) 
           {title}
         </Link>
       </h3>
+      <p className='text-base leading-relaxed mb-4'>{excerpt}</p>
       <div className='text-lg mb-4'>
         <DateFormatter dateString={date} />
       </div>
-      <p className='text-base leading-relaxed mb-4'>{excerpt}</p>
     </div>
   );
 };
