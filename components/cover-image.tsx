@@ -21,7 +21,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
     />
   );
   return (
-    <div className='sm:mx-0 w-48 h-48 overflow-hidden'>
+    <>
       {slug ? (
         <Link as={`/posts/${slug}`} href='/posts/[slug]' aria-label={title}>
           {image}
@@ -29,7 +29,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
       ) : (
         image
       )}
-    </div>
+    </>
   );
 };
 
