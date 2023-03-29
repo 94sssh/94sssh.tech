@@ -13,11 +13,11 @@ import type PostType from '../../interfaces/post';
 
 type Props = {
   post: PostType;
-  morePosts: PostType[];
+  posts: PostType[];
   preview?: boolean;
 };
 
-export default function Post({ post, morePosts, preview }: Props) {
+export default function Post({ post, posts, preview }: Props) {
   const router = useRouter();
   const title = `${post.title} | Next.js Blog Example with`;
   if (!router.isFallback && !post?.slug) {

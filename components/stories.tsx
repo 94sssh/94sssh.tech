@@ -5,10 +5,10 @@ type Props = {
   posts: Post[];
 };
 
-const Posts = ({ posts }: Props) => {
+const Stories = ({ posts }: Props) => {
   return (
     <section>
-      <h2 className='mb-8 text-5xl md:text-[4rem] font-black tracking-tighter leading-tight'>Posts</h2>
+      <h2 className='mb-8 text-5xl md:text-[4rem] font-black tracking-tighter leading-tight'>Stories</h2>
       <div className='mb-32'>
         {posts.map((post) => (
           <PostPreview key={post.slug} title={post.title} coverImage={post.coverImage} date={post.date} slug={post.slug} excerpt={post.excerpt} />
@@ -18,4 +18,4 @@ const Posts = ({ posts }: Props) => {
   );
 };
 
-export default Posts;
+export default Stories;
