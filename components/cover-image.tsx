@@ -9,17 +9,7 @@ type Props = {
 };
 
 const CoverImage = ({ title, src, slug }: Props) => {
-  const image = (
-    <Image
-      src={src}
-      alt={`Cover Image for ${title}`}
-      className={cn('rounded-lg shadow-sm w-full h-full object-cover', {
-        'hover:shadow-lg transition-shadow duration-200': slug,
-      })}
-      width={480}
-      height={480}
-    />
-  );
+  const image = <Image src={src} alt={`Cover Image for ${title}`} className={'rounded-lg w-full h-full object-cover'} width={480} height={480} />;
   return (
     <>
       {slug ? (
