@@ -11,7 +11,7 @@ type Props = {
 const PostHeader = ({ title, thumbnailImage, date }: Props) => {
   return (
     <>
-      <div className='mb-8 sm:mx-0 h-64 flex justify-center'>
+      <div className='border-2 border-green-500 mb-8 sm:mx-0 h-64 flex justify-center'>
         <CoverImage title={title} src={thumbnailImage} />
       </div>
       <PostTitle>{title}</PostTitle>

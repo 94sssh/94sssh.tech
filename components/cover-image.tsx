@@ -8,7 +8,7 @@ type Props = {
 };
 
 const CoverImage = ({ title, src, slug }: Props) => {
-  const image = <Image src={src} alt={`Cover Image for ${title}`} className={'rounded-lg w-full h-full'} width={480} height={480} />;
+  const image = <Image src={src} alt={`Cover Image for ${title}`} className={'rounded-lg w-auto h-auto'} width={480} height={480} />;
   return (
     <>
       {slug ? (

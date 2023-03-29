@@ -13,7 +13,7 @@ type Props = {
 const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
   return (
     <div className='flex flex-row mb-16'>
-      <div className='w-48 h-48 overflow-hidden'>
+      <div className='w-48 h-48'>
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
       <div className='flex flex-col justify-center ml-8 max-w-lg'>
