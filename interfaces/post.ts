@@ -3,6 +3,7 @@ type PostType = {
   title: string;
   date: string;
   coverImage: string;
+  thumbnailImage: string;
   excerpt: string;
   ogImage: {
     url: string;
