@@ -18,11 +18,11 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
       </div>
       <div className='flex flex-col justify-center ml-8 max-w-lg'>
         <h3 className='text-2xl font-bold leading-snug w-full mb-2'>
-          <Link as={`/posts/${slug}`} href='/posts/[slug]' className='hover:text-blue-500 text-[#0112C5]'>
+          <Link as={`/posts/${slug}`} href='/posts/[slug]' className='hover:text-blue-700 text-[#0081FB]'>
             {title}
           </Link>
         </h3>
-        <p className='text-lg leading-relaxed text-slate-800 overflow-hidden max-h-24'>{excerpt}</p>
+        <p className='text-lg leading-relaxed font-semibold text-slate-800 overflow-hidden max-h-24 mb-1'>{excerpt}</p>
         <div className='text-base text-slate-600'>
           <DateFormatter dateString={date} />
         </div>
