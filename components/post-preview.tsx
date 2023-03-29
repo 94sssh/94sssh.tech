@@ -12,18 +12,20 @@ type Props = {
 
 const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
   return (
-    <div className='bg-blue-500'>
-      <div className='mb-5'>
+    <div className='flex flex-row mb-8'>
+      <div>
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
-      <h3 className='text-xl font-bold mb-3 leading-snug'>
-        <Link as={`/posts/${slug}`} href='/posts/[slug]' className='hover:underline'>
-          {title}
-        </Link>
-      </h3>
-      <p className='text-base leading-relaxed mb-4'>{excerpt}</p>
-      <div className='text-lg mb-4'>
-        <DateFormatter dateString={date} />
+      <div className='flex flex-col justify-center ml-8 max-w-lg'>
+        <h3 className='text-2xl font-bold leading-snug w-full mb-2'>
+          <Link as={`/posts/${slug}`} href='/posts/[slug]' className='hover:underline'>
+            {title}
+          </Link>
+        </h3>
+        <p className='text-lg leading-relaxed text-slate-800 overflow-hidden max-h-24'>{excerpt}</p>
+        <div className='text-base text-slate-600'>
+          <DateFormatter dateString={date} />
+        </div>
       </div>
     </div>
   );
