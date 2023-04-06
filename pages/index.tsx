@@ -20,7 +20,6 @@ export default function Index({ allPosts }: Props) {
           <title>94sssh Blog</title>
         </Head>
         <Container>
-          <Header />
           <Intro />
           {posts.length > 0 && <Stories posts={posts} />}
         </Container>
