@@ -22,5 +22,5 @@
 }
 
 .markdown p > code {
-  @apply bg-slate-200 rounded-md text-base font-['Hack'] px-1;
+  @apply bg-slate-200 rounded-md text-base font-['Hack'] px-1 py-px;
 }
