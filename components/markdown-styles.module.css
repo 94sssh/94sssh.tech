@@ -24,3 +24,7 @@
 .markdown p > code {
   @apply bg-slate-200 rounded-md text-base font-['Hack'] px-1 py-px;
 }
+
+.markdown blockquote {
+  @apply italic font-bold;
+}
