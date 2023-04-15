@@ -28,3 +28,11 @@
 .markdown blockquote {
   @apply italic font-bold;
 }
+
+.markdown u {
+  @apply text-base text-slate-400 no-underline text-center flex justify-center;
+}
+
+.markdown img {
+  @apply m-auto;
+}
