@@ -22,7 +22,7 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
             {title}
           </Link>
         </h3>
-        <p className='text-lg leading-relaxed font-semibold text-slate-800 overflow-hidden max-h-24 mb-1'>{excerpt}</p>
+        <p className='text-lg leading-relaxed font-semibold text-slate-800 overflow-hidden max-h-[84px] mb-1'>{excerpt}</p>
         <div className='text-base text-slate-600'>
           <DateFormatter dateString={date} />
         </div>
