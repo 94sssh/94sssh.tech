@@ -1,6 +1,5 @@
 import Container from '../components/container';
 import Stories from '../components/stories';
-import Intro from '../components/intro';
 import Layout from '../components/layout';
 import { getAllPosts } from '../lib/api';
 import Head from 'next/head';
@@ -19,10 +18,7 @@ export default function Index({ allPosts }: Props) {
         <Head>
           <title>94sssh Blog</title>
         </Head>
-        <Container>
-          <Intro />
-          {posts.length > 0 && <Stories posts={posts} />}
-        </Container>
+        <Container>{posts.length > 0 && <Stories posts={posts} />}</Container>
       </Layout>
     </>
   );
